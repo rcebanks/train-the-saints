@@ -1,0 +1,91 @@
+
+Create the Train the Saints landing page using the existing assets and content files.
+
+## Existing Assets and Content
+
+* Hero image file: `tts-hero.jpg`
+* Body copy file: `tts-landingpage-copy`
+* The main CTA text is already included in the copy file.
+* Do not rewrite the body copy unless necessary for layout formatting.
+* Use the existing hero image as the main hero visual.
+
+## Page Anatomy
+
+Build the page with this structure:
+
+1. Navigation bar
+2. Hero section using `tts-hero.jpg`
+3. Welcome section
+4. Main body/content section using the copy from `tts-landingpage-copy`
+5. Bottom CTA button using the CTA text from the copy file
+
+## Navigation Bar
+
+Create a clean top navigation bar with:
+
+* Home
+* Newsletter
+* CTA button
+
+The navigation links should have this interaction style:
+
+* Default state:
+
+  * Black background
+  * White text
+
+* Hover state:
+
+  * White background
+  * Black text
+
+## Nav CTA Button
+
+The CTA inside the navigation bar should use the inverse styling of the regular nav links.
+
+If the nav links are:
+
+* Default: black background with white text
+* Hover: white background with black text
+
+Then the nav CTA should be:
+
+* Default: white background with black text
+* Hover: black background with white text
+
+The nav CTA should be rectangular with no rounded corners.
+
+## Bottom CTA Button
+
+There is a second CTA button near the bottom of the landing page.
+
+This bottom CTA should:
+
+* Use the CTA text from the copy file
+* Be static
+* Have rounded corners
+* Be visually prominent
+* Not use the nav hover/inverse styling
+* Function as the main conversion button for taking the survey
+
+## Hero Section
+
+* Use `tts-hero.jpg` as the hero image.
+* Keep the layout clean and centered.
+* The hero should feel spacious, polished, ministry-oriented, and research-driven.
+
+## Body Section
+
+* Pull the body copy from `tts-landingpage-copy`.
+* Preserve the intended content and CTA language from that file.
+* Use clear spacing, readable text width, and a calm visual hierarchy.
+
+## Design Direction
+
+* Simple, text-based landing page.
+* Centered content column.
+* Clean black-and-white interaction style in the navigation.
+* Generous spacing.
+* Mobile responsive.
+* Avoid adding extra CTAs that compete with the main survey action.
+* The main conversion goal is to get people to take the survey.
