@@ -34,7 +34,7 @@
       pointer-events: none;
       z-index: 999;
       opacity: 0.025;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' result='noise'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='noise' scale='90' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
     /* ── Navigation ── */
@@ -52,6 +52,9 @@
     }
 
     .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
       color: #fff;
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 1.15rem;
@@ -59,6 +62,11 @@
       letter-spacing: 0.02em;
       text-decoration: none;
       white-space: nowrap;
+    }
+
+    .nav-brand img {
+      height: 32px;
+      width: auto;
     }
 
     .nav-links {
@@ -409,7 +417,8 @@
     /* ── Mobile ── */
     @media (max-width: 760px) {
       nav { padding: 0 1rem; }
-      .nav-brand { font-size: 1rem; }
+      .nav-brand { font-size: 0.95rem; gap: 0.5rem; }
+      .nav-brand img { height: 28px; }
       .nav-links a { padding: 0 0.7rem; font-size: 0.66rem; letter-spacing: 0.08em; }
       .nav-links li:first-child { display: none; }
       .hero { background-position: 64% 18%; }
@@ -431,7 +440,10 @@
 
   <!-- Navigation -->
   <nav aria-label="Main navigation">
-    <a class="nav-brand" href="#top">Train the Saints</a>
+    <a class="nav-brand" href="#top">
+      <img src="images/TTS Favicon.png" alt="Train the Saints favicon" />
+      Train the Saints
+    </a>
     <ul class="nav-links">
       <li><a href="#top">Home</a></li>
       <li><a href="#letter" id="about-link">About</a></li>
